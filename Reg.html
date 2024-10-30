@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+
+
+    <style>
+
+.dropdown {
+  position: relative; /* Позиционируем контейнер относительно */
+  margin: 0px;
+}
+
+.dropdown-content {
+  display: none; /* Hide the sub-menu by default */
+  position: absolute; /* Position the sub-menu absolutely relative to its parent */
+  background-color: #fff; /* Set background color for the sub-menu */
+  min-width: 100%; /* Set minimum width for the sub-menu */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a slight shadow effect */
+  z-index: 1; /* Set z-index to ensure the sub-menu stays on top */
+  font-family: "Fira Sans Condensed", sans-serif;
+  margin: 0px;
+  padding: 20px 10px; 
+}
+
+.dropdown-content a {
+  color: black; 
+  padding: 12px 16px; 
+  text-decoration: none; 
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: bold;
+  margin: 0px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover { 
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content { 
+  display: block;
+  animation: showDropdown 0.3s ease; 
+}
+
+@keyframes showDropdown {
+  from {opacity: 0;} 
+  to {opacity: 1;} 
+}
+
+
+
+
+
+
+
+/* Верхнее меню */
+body {
+   margin: 0;
+   padding: 0;
+   background-color: rgb(255, 255, 255);
+}
+
+.header-menu {
+  display: flex;
+  height: min-content;
+ background-color: #ffffff;
+}
+
+.menu {
+  list-style-type: none;
+  padding-top: 15px;
+  margin-left: 300px;
+  background-attachment: fixed;
+}
+
+.menu .punct {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-left: 80px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: underline;
+   
+}
+
+
+.menu li {
+   display: inline-block;
+}
+
+
+.logo {
+   margin-top: 20px;
+   margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color:#000000;
+    font-size: 35px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    text-decoration: underline;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+}
+
+
+
+/* Контакты */
+
+
+.contact {
+    background-color: aliceblue;
+    height: 500px;
+    display: flex;
+}
+
+.contact2  {
+    padding-top: 200px;
+    padding-left: 200px;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.contact2 h1 {
+   
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.contact2 p{
+    font-size: 20px;
+}
+
+
+.contact1 {
+    padding-top: 200px;
+    padding-left: 200px;
+}
+
+.contact1 p {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 30px;
+}
+
+.contact1 a {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact1 a:hover {
+ text-decoration: underline;
+    
+}
+
+.rub {
+    display: flex;
+    background-color: #000000;
+}
+.rub h1 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 70px;
+    color: #ffffff;
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+.rub p {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #ffffff;
+    font-size:25px;
+    font-style: italic;
+    padding-left: 100px;
+    width: 500px;
+    margin-bottom: 20px;
+
+}
+.rubimg {
+    margin-left: 150px;
+}
+.rubimg img {
+    width: 300px;
+    height: 246px;
+    padding-top: 200px;
+}
+
+.rubtext a{
+    hyphens: manual;
+    background: 0 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: none;
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    font-family: "Work Sans",sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2.7px;
+    padding-left: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+    padding: 15px 68px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+    margin-left: 30px;
+}
+
+
+.rubtext a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.rubimg1 {
+    margin-left: 150px;
+}
+.rubimg1 img {
+    width: 500px;
+    height: 600px;
+    padding-top: 100px;
+}
+/* Регистрация */
+.form-group {
+  margin-bottom: 15px;
+  margin-left: 100px;
+  font-size: 30px;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.form-control {
+  width: 100px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+    
+}
+
+
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  margin-left: 100px;
+  font-size: 40px;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+}
+
+.formsss {
+    font-family: "Fira Sans Condensed", sans-serif;
+    height: 500px;
+}
+
+.regs {
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header-menu">
+        <div class="logo">
+            <h1><a href="index.html">Crystal Maiden</a></h1>
+        </div>
+        <ul class="menu">
+        <li><a class="punct" href="index.html">Бренд</a></li>
+        <li class="dropdown">
+        <a class="punct" href="#">Продукция</a>
+        <ul class="dropdown-content">
+            <li><a href="robber.html">RUBBER BASE</a></li>
+            <li><a href="Tips.html">ДЛЯ НОГТЕЙ</a></li>
+            <li><a href="Tops.html">ТОПЫ</a></li><br>
+        </ul>
+         </li>
+        <li><a class="punct" href="Reg.html">Зарегистрироваться</a></li>
+        </ul>
+</div>
+<div class="formsss">
+    <div class="regs">
+<form action="/register" method="post">
+    <h2>Регистрация</h2>
+</div>
+    <div class="form-group">
+      <label for="login">Логин:</label>
+      <input type="text" id="login" name="login" class="form-control" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" class="form-control" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="birthdate">Дата рождения:</label>
+      <input type="date" id="birthdate" name="birthdate" class="form-control" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" class="form-control" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="phone">Номер телефона:</label>
+      <input type="tel" id="phone" name="phone" class="form-control" required>
+    </div>
+ 
+    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+
+  </form>
+
+
+</div>
+
+
+<div class="contact">
+    <div class="contact2">
+    <h1>Crystal Maiden</h1>
+    <p>© 2021 CRYSTAL MAIDEN. by NAILSMADE<br>
+
+        Str. Ștefan cel Mare, 76
+MD-3100: Balti
+    </p>
+</div>
+    
+    <div class="contact1">
+        <p>Контакты</p>
+        <a href="mailto:elephir@gmail.com">CRYSTAL_MAIDEN@gmail.com</a>
+    </div>
+</div>
+
+
+</body>
+</html>

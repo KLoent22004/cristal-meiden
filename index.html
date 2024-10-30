@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYSTAL MAIDEN</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+
+
+    <style>
+
+.dropdown {
+  position: relative; /* Позиционируем контейнер относительно */
+  margin: 0px;
+}
+
+.dropdown-content {
+  display: none; /* Hide the sub-menu by default */
+  position: absolute; /* Position the sub-menu absolutely relative to its parent */
+  background-color: #fff; /* Set background color for the sub-menu */
+  min-width: 100%; /* Set minimum width for the sub-menu */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a slight shadow effect */
+  z-index: 1; /* Set z-index to ensure the sub-menu stays on top */
+  font-family: "Fira Sans Condensed", sans-serif;
+  margin: 0px;
+  padding: 20px 10px; 
+}
+
+.dropdown-content a {
+  color: black; 
+  padding: 12px 16px; 
+  text-decoration: none; 
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: bold;
+  margin: 0px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover { 
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content { 
+  display: block;
+  animation: showDropdown 0.3s ease; 
+}
+
+@keyframes showDropdown {
+  from {opacity: 0;} 
+  to {opacity: 1;} 
+}
+
+
+/* Верхнее меню */
+body {
+   margin: 0;
+   padding: 0;
+   background-color: rgb(255, 255, 255);
+}
+
+.header-menu {
+  display: flex;
+  height: min-content;
+  background-image: url('https://mia-bags.ru/wp-content/uploads/2/2/1/22166679a5910b88f6b576aaed4aab42.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+ 
+}
+
+.menu {
+  list-style-type: none;
+  padding-top: 15px;
+  margin-left: 300px;
+  background-attachment: fixed;
+}
+
+.menu .punct {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-left: 80px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: underline;
+   
+}
+
+
+.menu li {
+   display: inline-block;
+}
+
+
+.logo {
+   margin-top: 20px;
+   margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color:#000000;
+    font-size: 35px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    text-decoration: underline;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+}
+
+/* о бренде */
+
+.about {
+  display: flex;
+  margin-top: 50px;
+  height: 500px;
+}
+.about img {
+    width: auto;
+    height: 400px;
+   margin-left: 100px;
+    border-radius: 50px;
+}
+.textabout {
+    margin-left: 20px;
+}
+.p1 {
+    font-size:50px;
+    font-weight: bold;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.p2 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size:30px;
+    font-style:italic;
+}
+
+.p3 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size:30px;
+
+}
+
+/* ГДе купить??? */
+
+
+.buy {
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+.pb1 {
+    text-align: center;
+    font-size: 100px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    margin-bottom: 10px;
+}
+
+.pb2 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.button {
+   display: block;
+   text-align: center;
+
+}
+
+.button a {
+    text-align: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    text-decoration: none;
+    font-size: 50px;
+    color:#ffffff;
+    background-color: #000000;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.button a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+/* материал */
+
+.material {
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+
+
+.matimg img {
+    width:200px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.mattext {
+    flex-wrap: wrap;
+    display: flex;
+  
+}
+
+.mattext h1 {
+    font-size: 30px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    margin-left: 100px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: bold;
+}
+.mattext p {
+    font-size: 16px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    margin-left: 100px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-style: italic;
+}
+
+/* Контакты */
+
+
+.contact {
+    background-color: aliceblue;
+    height: 500px;
+    display: flex;
+}
+
+.contact2  {
+    padding-top: 200px;
+    padding-left: 200px;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.contact2 h1 {
+   
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.contact2 p{
+    font-size: 20px;
+}
+
+
+.contact1 {
+    padding-top: 200px;
+    padding-left: 200px;
+}
+
+.contact1 p {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 30px;
+}
+
+.contact1 a {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact1 a:hover {
+ text-decoration: underline;
+    
+}
+
+.video {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+
+}
+    </style>
+</head>
+<body>
+    <div class="header-menu">
+        <div class="logo">
+            <h1><a href="index.html">Crystal Maiden</a></h1>
+        </div>
+        <ul class="menu">
+        <li><a class="punct" href="index.html">Бренд</a></li>
+        <li class="dropdown">
+        <a class="punct" href="#">Продукция</a>
+        <ul class="dropdown-content">
+            <li><a href="robber.html">RUBBER BASE</a></li>
+            <li><a href="Tips.html">ДЛЯ НОГТЕЙ</a></li>
+            <li><a href="Tops.html">TОПЫ</a></li><br>
+        </ul>
+         </li>
+        <li><a class="punct" href="Reg.html">Зарегистрироваться</a></li>
+        </ul>
+</div>
+
+
+<div class="about">
+    <img src="https://stanok.guru/wp-content/uploads/imagetools0-199.jpg">
+    <div class="textabout">
+        <p class="p1">Про бренд</p>
+        <p class="p2">"Для тех, кому жизненно нужно работать в гармонии с продуктом."</p>
+        <p class="p3">Бренд <b>CRYSTAL MAIDEN</b> предназначен для тех, кто всегда стремится к гармонии и красоте в каждом своем выборе.</p>
+    </div>
+</div>
+
+
+
+<div class="buy">
+    <p class="pb1" >Где купить?</p>
+    <p class="pb2">Просмотрите каталог наших партнеров для покупки в розницу</p>
+    <div class="button">
+        <a href="https://french-shop.com.ua/hello/">Партнёры</a>
+    </div>
+</div>
+
+<div class="material">
+    <div class="matimg">  
+    <img src="https://media.istockphoto.com/id/454371463/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BB%D0%B0%D0%BA-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%BE%D0%B3%D1%82%D0%B5%D0%B9.jpg?s=612x612&w=0&k=20&c=j-qJI0MbiVSZCKnlRXB89Q5p5Yv1IKOQ4Ce_o6C23sU=" >
+    <img src="https://static9.depositphotos.com/1179869/1145/i/450/depositphotos_11456244-stock-photo-dripping-nail-polish.jpg" > 
+    <img src="https://thumbs.dreamstime.com/b/%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9-%D0%BB%D0%B0%D0%BA-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%BE%D0%B3%D1%82%D0%B5%D0%B9-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5-%D1%84%D0%BE%D0%BD%D0%BE%D0%BC-%D1%84%D0%BB%D0%B0%D0%BA%D0%BE%D0%BD%D0%B5-%D0%B8%D0%B7-%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE-157018169.jpg">
+    <img src="https://imgpng.ru/d/nail_polish_PNG64.png">
+</div>
+    <div class="mattext">
+        <div class="text1">
+        <h1>Материал</h1>
+        <p>Новый материал премиум-сегмента создан мастером для мастеров. Продукция сертифицирована, отвечает европейским стандартам качества и не тестируется на животных.</p>
+    </div>
+    <div class="text2">
+        <h1>Флакон</h1>
+        <p>Эргономичная форма флакона, приятное на ощупь матовое покрытие, удобная цветовая навигация.</p>
+    </div>
+    <div class="text3">
+        <h1>Колпачок</h1>
+        <p>Колпачок удобно ложится в руке, идеальное сочетание ширины и длины.</p>
+    </div>    
+    <div class="text4">
+        <h1>Кисточка</h1>
+        <p>Длина и густота ворса подобраны под консистенцию материала, четкий срез ворса позволяет прорисовывать ровный контур близко к кутикулам, прозрачная кисточка не искажает оттенок продукта.</p>
+    </div>
+</div>
+</div>
+
+<div class="video">
+    <p>Как правильно красить ногти?💅</p>
+    <div class="iframe">
+        <iframe  width="900" height="500" src="https://www.youtube.com/embed/c36UTi4zYH0?si=lH2Aca2Duld2hHHT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="contact">
+    <div class="contact2">
+    <h1>Crystal Maiden</h1>
+    <p>© 2021 CRYSTAL MAIDEN. by NAILSMADE<br>
+
+        Str. Ștefan cel Mare, 76
+MD-3100: Balti
+    </p>
+</div>
+    
+    <div class="contact1">
+        <p>Контакты</p>
+        <a href="mailto:olegkotelevici@gmail.com">CRYSTAL_MAIDEN@gmail.com</a>
+    </div>
+</div>
+
+
+</body>
+</html>
