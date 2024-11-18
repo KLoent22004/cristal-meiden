@@ -110,7 +110,7 @@ body {
 
 
 .contact {
-    background-color: aliceblue;
+    background-color: rgba(168, 183, 196, 0.932);
     height: 500px;
     display: flex;
 }
@@ -155,12 +155,13 @@ body {
 
 .rub {
     display: flex;
-    background-color: #030303;
+    background-color: #868282;
 }
+
 .rub h1 {
     font-family: "Fira Sans Condensed", sans-serif;
     font-size: 70px;
-    color: #000000;
+    color: #4f6854;
     padding-top: 150px;
     padding-left: 100px;
 }
@@ -208,15 +209,15 @@ body {
     text-align: center;
     justify-content: center;
     background-color: transparent;
-    border: 1px solid #000;
+    border: 1px solid #817d7d;
     color: #000000;
-    border-color: #000000;
+    border-color: #0f0f0f;
     margin-left: 30px;
 }
 
 
 .rubtext a:hover {
-    background-color: #000000;
+    background-color: #54695b;
     color: #ffffff;
 }
 
@@ -228,5 +229,6 @@ body {
     height: 600px;
     padding-top: 100px;
 }
+
 
 
